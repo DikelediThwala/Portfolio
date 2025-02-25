@@ -19,7 +19,8 @@ html {
 
 body {
     margin-bottom: 60px;
-    background-image: url('../images/dark blue.jpg');
+    /*    background-image: url('../images/background blue.jpg');
+*/ background-image: url('../images/dark blue.jpg');
     color: white;
     background-size: cover;
     background-repeat: no-repeat;
@@ -94,3 +95,139 @@ body {
     color: #000; /* Color change on hover */
     font-size: 70px;
 }
+
+.timeline-container {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto;
+    padding-left: 50px; /* Adjust for space on the left */
+}
+
+    .timeline-container::before {
+        content: "";
+        position: absolute;
+        left: 30px;
+        top: 0;
+        height: 100%;
+        border-left: 2px solid #000; /* Creates the vertical line */
+        width: 0;
+    }
+
+.timeline-card {
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Light transparent background */
+    border: 2px solid #000;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
+}
+
+    .timeline-card:hover {
+        transform: scale(1.05); /* Slightly enlarge the card */
+        box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+    }
+
+    .timeline-card::before {
+        content: "";
+        position: absolute;
+        left: -18px; /* Creates the dot on the line */
+        top: 10px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #000; /* The dot color */
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+.university-card h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222;
+    text-transform: uppercase;
+}
+
+.university-card h5 {
+    color: aqua;
+    font-size: 16px;
+}
+
+.university-card h3 {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.university-card h4 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.university-card h3.underline {
+    text-decoration: underline;
+    color: aqua;
+}
+
+.university-card br {
+    display: none; /* Removes unnecessary spacing */
+}
+
+
+/*Icons */
+.nav-item a {
+    color: white; /* Default icon color */
+    font-size: 2rem; /* Icon size */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+    .nav-item a:hover {
+        color: #0077b5; /* Change color on hover for LinkedIn */
+        transform: scale(1.2); /* Enlarge the icon slightly */
+    }
+
+        .nav-item a:hover .fab.fa-linkedin {
+            color: #0077b5; /* LinkedIn blue */
+        }
+
+        .nav-item a:hover .fab.fa-twitter {
+            color: #1da1f2; /* Twitter blue */
+        }
+
+        .nav-item a:hover .fab.fa-facebook {
+            color: red; /* Facebook blue */
+        }
+
+    .nav-item a:hover {
+        transform: scale(1.2); /* Slightly enlarge all icons on hover */
+    }
+
+
+    .nav-item a:hover {
+        transform: scale(1.2); /* Slightly enlarge all icons on hover */
+    }
+
+
+.download-button:hover {
+    transform: scale(1.2); /* Increase size on hover */
+}
+
+/* Common style for icons container */
+.devicon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    /* Hover effect for icon */
+    .devicon-container:hover {
+        transform: scale(1.2); /* Enlarge the icon by 20% */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional: add a shadow effect */
+    }
+
+    /* Icons style */
+    .devicon-container i {
+        font-size: 60px;
+        color: #fff;
+    }
