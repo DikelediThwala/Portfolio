@@ -1,0 +1,128 @@
+﻿@{
+    Layout = "_CertificateLayout";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/certificate.css" />
+}
+
+<style>
+    .certificate-card {
+        background-color: #1c1c1c;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 255, 255, 0.05);
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .certificate-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(0, 255, 255, 0.3);
+        }
+
+    .certificate-img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover; /* Ensures full image is shown */
+        background-color: #000; /* Prevents white gaps for PNGs */
+        padding: 0px;
+    }
+
+    .certificate-body {
+        padding: 20px;
+        color: #fff;
+        text-align: center;
+    }
+
+        .certificate-body h2 {
+            font-size: 20px;
+            color: #00FFFF;
+            margin-bottom: 10px;
+        }
+
+        .certificate-body p {
+            font-size: 15px;
+            color: #ccc;
+            margin-bottom: 15px;
+        }
+
+        .certificate-body a.btn {
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 14px;
+        }
+</style>
+
+<div id="Certification" class="container my-5">
+    <h1 class="text-center mb-5" style="color: aqua;">Certificates</h1>
+    <div class="fancy-line-wrapper">
+        <div class="fancy-line"></div>
+        <div class="fancy-dot"></div>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="certificate-card h-100">
+                <img src="~/images/certificate 3 (responsive design).jpg.png" class="certificate-img" alt="Responsive Web Design">
+                <div class="certificate-body">
+                    <h2>Responsive Web Design</h2>
+                    <p>This certificate verifies completion of the Responsive Web Design course by Free Code Camp.</p>
+                    <a href="https://freecodecamp.org/certification/Dikeledi_Happiness_Thwala/responsive-web-design" target="_blank" class="btn btn-outline-info">Verify</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="certificate-card h-100">
+                <img src="~/images/data analysis with python .png" class="certificate-img" alt="Responsive Web Design" />
+                <div class="certificate-body">
+                    <h2>Data Analysis with Python</h2>
+                    <p>This certificate verifies completion of the Data Analysis with Python course by Free Code Camp.</p>
+                    <a href="https://freecodecamp.org/certification/Dikeledi_Happiness_Thwala/data-analysis-with-python-v7" target="_blank" class="btn btn-outline-info">Verify</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="certificate-card h-100">
+                <img src="~/images/certificate 1.jpg" class="certificate-img" alt="Data Fundamentals">
+                <div class="certificate-body">
+                    <h2>Data Fundamentals (IBM)</h2>
+                    <p>This certificate verifies completion of the Data Fundamentals course provided by IBM.</p>
+                    <a href="https://www.credly.com/badges/3f05f2c9-44e2-4da4-a46f-2973e156f798/linked_in_profile" target="_blank" class="btn btn-outline-info">Verify</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="certificate-card h-100">
+                <img src="~/images/certificate 2.jpg" class="certificate-img" alt="Web Development Fundamentals">
+                <div class="certificate-body">
+                    <h2>Web Dev Fundamentals (IBM)</h2>
+                    <p>This certificate verifies completion of the Web Development Fundamentals course provided by IBM.</p>
+                    <a href="https://www.credly.com/badges/58d2f306-ef83-490c-a78c-3496b4b5c018/linked_in_profile" target="_blank" class="btn btn-outline-info">Verify</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="certificate-card h-100">
+                <img src="~/images/certificate 5(networks).jpg" class="certificate-img" alt="Intro to Networks">
+                <div class="certificate-body">
+                    <h2>Introduction to Networks</h2>
+                    <p>This certificate verifies completion of the Networks course provided by Cisco.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="certificate-card h-100">
+                <img src="~/images/certificate 4 (intro to cybe).jpg" class="certificate-img" alt="Intro to Cyber Security">
+                <div class="certificate-body">
+                    <h2>Intro to Cyber Security</h2>
+                    <p>This certificate verifies completion of the Cyber Security course provided by Cisco.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -19,8 +19,7 @@ html {
 
 body {
     margin-bottom: 60px;
-    /*    background-image: url('../images/background blue.jpg');
-*/ background-image: url('../images/dark blue.jpg');
+    background-color :black;
     color: white;
     background-size: cover;
     background-repeat: no-repeat;
@@ -30,7 +29,6 @@ body {
     background-color: mediumpurple;
 }
 
-/*resume*/
 .download-container {
     text-align: center;
     margin-top: 20px;
@@ -39,40 +37,39 @@ body {
 .download-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: purple; /* Button color */
+    background-color: purple; 
     color: white;
     text-decoration: none;
     font-size: 25px;
-    border-radius: 25px; /* Curvy corners */
+    border-radius: 25px; 
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
     .download-button:hover {
-        background-color: #45a049; /* Hover color */
+        background-color: #45a049; 
     }
 
     .download-button span {
-        margin-left: 8px; /* Space between text and arrow */
+        margin-left: 8px; 
     }
 
 
-/*occ*/
 .developer-titles {
-    font-size: 50px; /* Adjust the font size as needed */
+    font-size: 50px; 
     font-weight: bold;
     font-family: sans-serif;
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
-    width: 25ch; /* Adjust based on the longest title */
+    width: 25ch; 
 }
 
-/*//hover*/
+
 
 .navbar-nav {
-    gap: 20px; /* Add spacing between the nav items */
+    gap: 20px; 
 }
 
 .nav-link-hover {
@@ -82,135 +79,48 @@ body {
 }
 
     .nav-link-hover:hover {
-        transform: scale(1.2); /* Increases size on hover */
-        background-color: mediumpurple /* Adds cover on hover */
+        transform: scale(1.2);
+        background-color: mediumpurple 
+
     }
-
-
-
-
-
-/*Languages icons*/
-.icon-container:hover i {
-    color: #000; /* Color change on hover */
-    font-size: 70px;
-}
-
-.timeline-container {
-    position: relative;
-    max-width: 800px;
-    margin: 50px auto;
-    padding-left: 50px; /* Adjust for space on the left */
-}
-
-    .timeline-container::before {
-        content: "";
-        position: absolute;
-        left: 30px;
-        top: 0;
-        height: 100%;
-        border-left: 2px solid #000; /* Creates the vertical line */
-        width: 0;
-    }
-
-.timeline-card {
-    position: relative;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.1); /* Light transparent background */
-    border: 2px solid #000;
-    margin-bottom: 30px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
-}
-
-    .timeline-card:hover {
-        transform: scale(1.05); /* Slightly enlarge the card */
-        box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
-    }
-
-    .timeline-card::before {
-        content: "";
-        position: absolute;
-        left: -18px; /* Creates the dot on the line */
-        top: 10px;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background-color: #000; /* The dot color */
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    }
-
-.university-card h1 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #222;
-    text-transform: uppercase;
-}
-
-.university-card h5 {
-    color: aqua;
-    font-size: 16px;
-}
-
-.university-card h3 {
-    font-size: 20px;
-    margin-top: 5px;
-}
-
-.university-card h4 {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.university-card h3.underline {
-    text-decoration: underline;
-    color: aqua;
-}
-
-.university-card br {
-    display: none; /* Removes unnecessary spacing */
-}
-
-
-/*Icons */
+/*Home part*/
 .nav-item a {
-    color: white; /* Default icon color */
-    font-size: 2rem; /* Icon size */
-    transition: all 0.3s ease; /* Smooth transition for all properties */
+    color: white; 
+    font-size: 2rem; 
+    transition: all 0.3s ease;
 }
 
     .nav-item a:hover {
-        color: #0077b5; /* Change color on hover for LinkedIn */
-        transform: scale(1.2); /* Enlarge the icon slightly */
+        color: #0077b5; 
+        transform: scale(1.2); 
     }
 
         .nav-item a:hover .fab.fa-linkedin {
-            color: #0077b5; /* LinkedIn blue */
+            color: #0077b5; 
         }
 
         .nav-item a:hover .fab.fa-twitter {
-            color: #1da1f2; /* Twitter blue */
+            color: #1da1f2; 
         }
 
         .nav-item a:hover .fab.fa-facebook {
-            color: red; /* Facebook blue */
+            color: red; 
         }
 
     .nav-item a:hover {
-        transform: scale(1.2); /* Slightly enlarge all icons on hover */
+        transform: scale(1.2); 
     }
 
 
     .nav-item a:hover {
-        transform: scale(1.2); /* Slightly enlarge all icons on hover */
+        transform: scale(1.2); 
     }
 
 
 .download-button:hover {
-    transform: scale(1.2); /* Increase size on hover */
+    transform: scale(1.2); 
 }
 
-/* Common style for icons container */
 .devicon-container {
     display: flex;
     justify-content: center;
@@ -220,14 +130,498 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-    /* Hover effect for icon */
     .devicon-container:hover {
-        transform: scale(1.2); /* Enlarge the icon by 20% */
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional: add a shadow effect */
+        transform: scale(1.2);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
     }
 
-    /* Icons style */
     .devicon-container i {
         font-size: 60px;
         color: #fff;
     }
+
+/*Project section*/
+
+.project-card {
+    background-color: #1C1C1C;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #fff;
+}
+
+    .project-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 25px rgba(0, 255, 255, 0.3);
+    }
+
+    .project-card h2 {
+        font-size: 22px;
+        color: aqua;
+        margin-bottom: 10px;
+    }
+
+    .project-card p {
+        font-size: 15px;
+        color: #ccc;
+    }
+
+    .project-card ul {
+        padding-left: 20px;
+        font-size: 14px;
+        color: #aaa;
+        margin-top: 10px;
+    }
+
+        .project-card ul li {
+            margin-bottom: 8px;
+        }
+
+    .project-card .btn-demo {
+        padding: 10px 25px;
+        font-size: 14px;
+        background-color: transparent;
+        border: 2px solid aqua;
+        color: aqua;
+        border-radius: 30px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+        .project-card .btn-demo:hover {
+            background-color: aqua;
+            color: black;
+            transform: scale(1.1);
+        }
+
+
+/*Back stop stop button */
+
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+
+    #backToTop:hover {
+        background-color: #0056b3;
+        transform: scale(1.1);
+    }
+
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+
+/*Skills section*/
+.skills-section {
+    background: #0d1117;
+    color: white;
+}
+
+.skill-card {
+    background-color: #161b22;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .skill-card i {
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+
+    .skill-card h5 {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .skill-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 25px rgba(0, 255, 255, 0.3);
+    }
+
+
+/*Education */
+.education-card {
+    background-color: #1C1C1C;
+    color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+    .education-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 25px rgba(0, 255, 255, 0.3);
+    }
+
+    .education-card h2 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .education-card h4.subtitle {
+        font-size: 18px;
+        color: #00FFFF;
+        margin-bottom: 10px;
+    }
+
+    .education-card p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+.edu-date {
+    font-size: 14px;
+    font-weight: bold;
+    color: #cccccc;
+    display: block;
+    margin-bottom: 15px;
+}
+.timeline-wrapper {
+    position: relative;
+    margin: 0 auto;
+    padding: 40px 0;
+    width: 100%;
+    max-width: 900px;
+}
+
+    .timeline-wrapper::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 4px;
+        height: 100%;
+        background-color: aqua;
+        transform: translateX(-50%);
+        z-index: 0;
+        box-shadow: 0 0 10px aqua, 0 0 20px aqua;
+    }
+
+.timeline-item {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;   
+}
+
+    .timeline-item.right {
+        justify-content: flex-end;
+    }
+
+    .timeline-item .education-card {
+        width: 45%;
+        z-index: 1;
+    }
+
+.timeline-dot {
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    width: 16px;
+    height: 16px;
+    background-color: aqua;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    border: 3px solid #1C1C1C;
+    box-shadow: 0 0 10px aqua, 0 0 20px aqua;
+}
+
+/* Optional: Mobile responsive layout */
+@media (max-width: 768px) {
+    .timeline-item,
+    .timeline-item.right {
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .timeline-item .education-card {
+            width: 90%;
+        }
+
+    .timeline-dot {
+        top: -10px;
+    }
+}
+
+.timeline-icon {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    color: aqua;
+    z-index: 3;
+    text-shadow: 0 0 10px aqua, 0 0 20px aqua;
+}
+
+
+
+
+
+
+
+
+/*Shapes*/
+.animated-background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+    .animated-background span {
+        position: absolute;
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: rgba(0, 255, 255, 0.2);
+        animation: float 15s linear infinite;
+        border-radius: 50%;
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+    }
+
+        .animated-background span:nth-child(1) {
+            left: 10%;
+            animation-delay: 0s;
+            top: 80%;
+        }
+
+        .animated-background span:nth-child(2) {
+            left: 25%;
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 0, 255, 0.2);
+            animation-delay: 1s;
+            top: 90%;
+        }
+
+        .animated-background span:nth-child(3) {
+            left: 50%;
+            animation-delay: 2s;
+            top: 85%;
+        }
+
+        .animated-background span:nth-child(4) {
+            left: 70%;
+            width: 80px;
+            height: 80px;
+            background: rgba(0, 255, 127, 0.2);
+            animation-delay: 3s;
+            top: 95%;
+        }
+
+        .animated-background span:nth-child(5) {
+            left: 90%;
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 165, 0, 0.2);
+            animation-delay: 4s;
+            top: 100%;
+        }
+
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+
+/* === Stars / Sparkles === */
+.stars i {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    animation: twinkle 4s infinite;
+}
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.stars i:nth-child(1) {
+    top: 10%;
+    left: 10%;
+}
+
+.stars i:nth-child(2) {
+    top: 30%;
+    left: 25%;
+}
+
+.stars i:nth-child(3) {
+    top: 20%;
+    left: 80%;
+}
+
+.stars i:nth-child(4) {
+    top: 40%;
+    left: 60%;
+}
+
+.stars i:nth-child(5) {
+    top: 60%;
+    left: 20%;
+}
+
+.stars i:nth-child(6) {
+    top: 70%;
+    left: 70%;
+}
+
+.stars i:nth-child(7) {
+    top: 50%;
+    left: 50%;
+}
+
+.stars i:nth-child(8) {
+    top: 80%;
+    left: 30%;
+}
+
+.stars i:nth-child(9) {
+    top: 90%;
+    left: 90%;
+}
+
+.stars i:nth-child(10) {
+    top: 75%;
+    left: 10%;
+}
+
+/* === Shooters === */
+.shooters .line {
+    position: absolute;
+    width: 4px;
+    height: 100px;
+    background: linear-gradient(to top, rgba(0,255,255,0.5), transparent);
+    animation: shoot 3s linear infinite;
+    opacity: 0.4;
+}
+
+@keyframes shoot {
+    0% {
+        top: 100%;
+        opacity: 0.5;
+    }
+
+    100% {
+        top: -100px;
+        opacity: 0;
+    }
+}
+
+.shooters .line:nth-child(1) {
+    left: 30%;
+    animation-delay: 0s;
+}
+
+.shooters .line:nth-child(2) {
+    left: 55%;
+    animation-delay: 1.5s;
+}
+
+.shooters .line:nth-child(3) {
+    left: 75%;
+    animation-delay: 3s;
+}
+
+
+
+/*Under heading line*/
+.fancy-line-wrapper {
+    position: relative;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+.fancy-line {
+    width: 120px;
+    height: 4px;
+    background: linear-gradient(to right, transparent, aqua, transparent);
+    margin: 0 auto;
+    border-radius: 4px;
+    position: relative;
+    box-shadow: 0 0 10px aqua;
+    animation: line-glow 3s infinite ease-in-out;
+}
+
+.fancy-dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 14px;
+    height: 14px;
+    background-color: aqua;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px aqua, 0 0 20px aqua;
+    animation: beat 1.5s infinite ease-in-out;
+}
+
+@keyframes beat {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+        box-shadow: 0 0 10px aqua, 0 0 20px aqua;
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.3);
+        box-shadow: 0 0 20px aqua, 0 0 30px aqua;
+    }
+}
+
+@keyframes line-glow {
+    0%, 100% {
+        box-shadow: 0 0 10px aqua;
+    }
+
+    50% {
+        box-shadow: 0 0 20px aqua;
+    }
+}
