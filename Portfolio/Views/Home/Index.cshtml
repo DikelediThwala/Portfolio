@@ -24,40 +24,43 @@
     </div>
 </div>
 
-<div>
-    <div class="container d-flex align-items-start"
-         style="height: 600px;
-            width: 75vw;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;">
-       
-        <div style="text-align: left; padding: 20px; flex: 1;">
-            <h1 style="margin-inline-start: 0;">I'm,</h1>
-            <h1 class="display-4">Thwala Dikeledi</h1>
-            <div class="developer-titles">
-                <span id="animated-title"></span>
-            </div>
-            <br />
-            <h5>I’m a product focused developer based in</h5>
-            <h5>South Africa, dedicated to turning innovative</h5>
-            <h5>ideas into successful, real life products. Specializing</h5>
-            <h5>in leveraging user metrics, I help drive growth and ensure</h5>
-            <h5>the success of the overall product. My approach combines technical</h5>
-            <h5>expertise with a keen understanding of product dynamics to deliver </h5>
-            <h5>impactful solutions.</h5>
-        </div>
-		
-     
-        <div class="glow-box" style="flex: 0 0 auto; padding: 20px;">
-            <img src="@Url.Content("~/Images/Profile.jpeg")"
-                 alt="Profile Picture"
-                 style="width: 450px; height: 500px; object-fit: cover; border-radius: 50%;" />
-        </div>
 
+
+<div class="container my-5">
+    <div class="card border-0 shadow-lg text-white"
+         style="background: linear-gradient(135deg, rgba(0,255,255,0.05), rgba(255,255,255,0.03)); border-radius: 20px; overflow: hidden;">
+
+        <div class="row g-0 align-items-center" style="min-height: 600px;">
+            <!-- Text Section -->
+            <div class="col-md-7 p-5">
+                <h1 style="margin: 0;">I'm,</h1>
+                <h1 class="display-4 fw-bold" style="color: aqua;">Thwala Dikeledi</h1>
+
+                <div class="developer-titles mb-3">
+                    <span id="animated-title" style="font-size: 1.25rem; color: #0ff;"></span>
+                </div>
+
+                <p style="font-size: 1rem; color: #ccc; line-height: 1.6;">
+                    I’m a product-focused developer based in South Africa, dedicated to turning innovative ideas into successful, real-life products.
+                    Specializing in leveraging user metrics, I help drive growth and ensure the success of the overall product.
+                    My approach combines technical expertise with a keen understanding of product dynamics to deliver impactful solutions.
+                </p>
+            </div>
+
+            <!-- Profile Image -->
+            <div class="col-md-5 d-flex justify-content-center align-items-center p-4">
+                <div class="glow-box p-3 rounded-circle" style="background: radial-gradient(circle, rgba(0,255,255,0.15), rgba(0,0,0,0.5));">
+                    <img src="@Url.Content("~/Images/Profile.jpeg")"
+                         alt="Profile Picture"
+                         class="img-fluid rounded-circle shadow"
+                         style="width: 100%; max-width: 350px; height: auto; object-fit: cover;" />
+                </div>
+            </div>
+        </div>
     </div>
-    <hr />
 </div>
+
+
 
 
 <div id="about-me" style="background-color:">
