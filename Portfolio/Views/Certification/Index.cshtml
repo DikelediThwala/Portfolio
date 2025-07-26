@@ -1,6 +1,27 @@
 ﻿@{
     Layout = "_CertificateLayout";
 }
+   
+
+<div class="animated-background">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <div class="stars">
+        <i></i><i></i><i></i><i></i><i></i>
+        <i></i><i></i><i></i><i></i><i></i>
+    </div>
+
+    <div class="shooters">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+</div>
+
 
 @section Styles {
     <link rel="stylesheet" href="~/css/certificate.css" />
@@ -125,3 +146,26 @@
         </div>
     </div>
 </div>
+
+
+<button id="backToTop" onclick="scrollToTop()">▲</button>
+<script>
+
+    window.onscroll = function() {
+        let button = document.getElementById("backToTop");
+        if (document.documentElement.scrollTop > 100) {
+            button.style.display = "block";
+        } else {
+            button.style.display = "none";
+        }
+    };
+
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+</script>
+
+
